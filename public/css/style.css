@@ -1,3 +1,17 @@
 .nav1{
-   background-color: rgba(99, 223, 240, 0.726);
+   background-color: rgba(145, 145, 145, 0);
+}
+.nav1:hover{
+   background: rgba(0, 0, 0, 0.692);
+   opacity: .9;
+}
+.fondo_registro{
+   background-image: url(../img/fondo3.jpg);
+}
+.fondo_login{
+   background-image: url(../img/fondo4.jpg);
+}
+.imgresponsive{
+   width: 100%;
+   height: fit-content;
 }
