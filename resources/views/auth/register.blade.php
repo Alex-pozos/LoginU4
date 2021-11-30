@@ -31,6 +31,33 @@
                                 @enderror
                             </div>
                         </div>
+                        <div class="form-group row">
+        
+                            <div class="col-md-12">
+                                <input id="apellido_paterno" type="text" class="form-control @error('apellido_paterno') is-invalid @enderror"
+                                    name="apellido_paterno" value="{{ old('apellido_paterno') }}" required autocomplete="name" autofocus placeholder="Apellido paterno">
+
+                                @error('apellido_paterno')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+        
+                            <div class="col-md-12">
+                                <input id="fecha_de_nacimiento" name="fecha_de_nacimiento" type="date" class="form-control @error('fecha_de_nacimiento') is-invalid @enderror"
+                                   value="{{ old('fecha_de_nacimiento') }}" required autocomplete="fecha_de_nacimiento" autofocus placeholder="Fecha de nacimiento">
+
+                                @error('fecha_de_nacimiento')
+                                    <span class="invalid-feedback" role="alert">
+                                        <strong>{{ $message }}</strong>
+                                    </span>
+                                @enderror
+                            </div>
+                        </div>
 
                         <div class="form-group row">
 
